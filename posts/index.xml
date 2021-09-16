@@ -1,0 +1,186 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on 主页</title>
+		<link>https://sorrymakerzzz.github.io/posts/</link>
+		<description>Recent content in Posts on 主页</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>zh-cn</language>
+		<lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://sorrymakerzzz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>地震学原理2</title>
+			<link>https://sorrymakerzzz.github.io/posts/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%8E%9F%E7%90%862/</link>
+			<pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://sorrymakerzzz.github.io/posts/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%8E%9F%E7%90%862/</guid>
+			<description>问题 要点 </description>
+			<content type="html"><![CDATA[<h1 id="问题">问题</h1>
+<h1 id="要点">要点</h1>
+<p><img src="" alt="img"></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>‘git’使用教程</title>
+			<link>https://sorrymakerzzz.github.io/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+			<pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://sorrymakerzzz.github.io/posts/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+			<description>参考网站：https://www.liaoxuefeng.com/wiki/896043488029600
+命令备忘录：Git Cheat Sheet
+一、创建版本库 1.1 初始化仓库 git init1.2 将文件放进仓库 git add xxx.txt xxx.xxx1.3 提交对仓库的改动 git commit -m &amp;quot;改动说明&amp;quot;1.4 查看仓库状态 git status二、仓库文件版本变动 2.1 版本回退 git log #查看提交历史git reflog #查看命令历史git reset --hard commit_id #回退到“commit_id”这个版本git reset --hard HEAD^ #回退到上个版本；HEAD指的是当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^2.2 查看工作区和版本库里面最新版本的区别 git diff HEAD -- xxx.txt2.3 撤销修改 # 只add未commitgit checkout -- file # 已经commitgit reset HEAD file git checkout -- file 2.4 删除文件 git rm test.</description>
+			<content type="html"><![CDATA[<p>参考网站：<a href="https://www.liaoxuefeng.com/wiki/896043488029600">https://www.liaoxuefeng.com/wiki/896043488029600</a></p>
+<p>命令备忘录：<a href="https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.pdf">Git Cheat Sheet</a></p>
+<h2 id="一创建版本库">一、创建版本库</h2>
+<h3 id="11-初始化仓库">1.1 初始化仓库</h3>
+<pre><code>git init
+</code></pre><h3 id="12-将文件放进仓库">1.2 将文件放进仓库</h3>
+<pre><code>git add xxx.txt xxx.xxx
+</code></pre><h3 id="13-提交对仓库的改动">1.3 提交对仓库的改动</h3>
+<pre><code>git commit -m &quot;改动说明&quot;
+</code></pre><h3 id="14-查看仓库状态">1.4 查看仓库状态</h3>
+<pre><code>git status
+</code></pre><h2 id="二仓库文件版本变动">二、仓库文件版本变动</h2>
+<h3 id="21-版本回退">2.1 版本回退</h3>
+<pre><code>git log #查看提交历史
+git reflog #查看命令历史
+git reset --hard commit_id #回退到“commit_id”这个版本
+git reset --hard HEAD^ #回退到上个版本；HEAD指的是当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^
+</code></pre><h3 id="22-查看工作区和版本库里面最新版本的区别">2.2 查看工作区和版本库里面最新版本的区别</h3>
+<pre><code>git diff HEAD -- xxx.txt
+</code></pre><h3 id="23-撤销修改">2.3 撤销修改</h3>
+<pre><code># 只add未commit
+git checkout -- file 
+
+# 已经commit
+git reset HEAD file 
+git checkout -- file 
+</code></pre><h3 id="24-删除文件">2.4 删除文件</h3>
+<pre><code>git rm test.txt
+git commit -m &quot;remove test.txt&quot;
+</code></pre><h2 id="三远程仓库">三、远程仓库</h2>
+<h3 id="31-添加远程库">3.1 添加远程库</h3>
+<pre><code>git remote add origin git@server-name:path/repo-name.git #关联远程库
+git push -u origin master #第一次推送master分支的所有内容
+git push origin master #之后推送最新修改
+</code></pre><h3 id="32-克隆远程库">3.2 克隆远程库</h3>
+<pre><code>git clone git@github.com:michaelliao/gitskills.git #git clone + 远程库地址
+</code></pre><h2 id="四分支管理">四、分支管理</h2>
+<h3 id="41-创建与合并分支">4.1 创建与合并分支</h3>
+<pre><code>查看分支：git branch
+创建分支：git branch &lt;name&gt;
+切换分支：git checkout &lt;name&gt;或者git switch &lt;name&gt;
+创建+切换分支：git checkout -b &lt;name&gt;或者git switch -c &lt;name&gt;
+合并某分支到当前分支：git merge &lt;name&gt;
+删除分支：git branch -d &lt;name&gt;
+强行删除未合并过的分支：git branch -D &lt;name&gt;
+</code></pre><h3 id="42-多人协作">4.2 多人协作</h3>
+<pre><code>查看远程库信息，使用git remote -v；
+本地新建的分支如果不推送到远程，对其他人就是不可见的；
+从本地推送分支，使用git push origin branch-name，如果推送失败，先用git pull抓取远程的新提交；
+在本地创建和远程分支对应的分支，使用git checkout -b branch-name origin/branch-name，本地和远程分支的名称最好一致；
+建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name；
+从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
+</code></pre><h2 id="五标签管理">五、标签管理</h2>
+<h3 id="51-创建标签">5.1 创建标签</h3>
+<pre><code>命令git tag &lt;tagname&gt;用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+命令git tag -a &lt;tagname&gt; -m &quot;blablabla...&quot;可以指定标签信息；
+命令git tag可以查看所有标签。
+</code></pre><h3 id="52-操作标签">5.2 操作标签</h3>
+<pre><code>命令git push origin &lt;tagname&gt;可以推送一个本地标签；
+命令git push origin --tags可以推送全部未推送过的本地标签；
+命令git tag -d &lt;tagname&gt;可以删除一个本地标签；
+命令git push origin :refs/tags/&lt;tagname&gt;可以删除一个远程标签。
+</code></pre>]]></content>
+		</item>
+		
+		<item>
+			<title>文章写作模板格式</title>
+			<link>https://sorrymakerzzz.github.io/posts/%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C%E6%A8%A1%E6%9D%BF%E6%A0%BC%E5%BC%8F/</link>
+			<pubDate>Fri, 30 Jul 2021 00:00:00 +0000</pubDate>
+			
+			<guid>https://sorrymakerzzz.github.io/posts/%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C%E6%A8%A1%E6%9D%BF%E6%A0%BC%E5%BC%8F/</guid>
+			<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ An apple is a sweet, edible fruit produced by an apple tree (Malus pumila).</description>
+			<content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<blockquote>
+<p>An apple is a sweet, edible fruit produced by an apple tree (Malus pumila). Apple trees are cultivated worldwide, and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek and European Christian traditions.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<hr>
+<p>Inline styles：</p>
+<p><strong>strong</strong>, <em>emphasis</em>, <em><strong>strong and emphasis</strong></em>,<code>code</code>, <!-- raw HTML omitted -->underline<!-- raw HTML omitted -->, <del>strikethrough</del>, :joy:🤣, $\LaTeX$, X^2, H~2~O, ==highlight==, <a href="https://example.com">Link</a>, and image:</p>
+<p><img src="https://picsum.photos/600/400/?random" alt="img"></p>
+<hr>
+<p>Headings:</p>
+<h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<h6 id="heading-6">Heading 6</h6>
+<p>Table:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left-Aligned</th>
+<th style="text-align:center">Center Aligned</th>
+<th style="text-align:right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">col 3 is</td>
+<td style="text-align:center">some wordy text</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td style="text-align:left">col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td style="text-align:left">zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>Lists:</p>
+<ul>
+<li>Unordered list item 1.</li>
+<li>Unordered list item 2.</li>
+</ul>
+<ol>
+<li>ordered list item 1.</li>
+<li>ordered list item 2.
+<ul>
+<li>sub-unordered list item 1.</li>
+<li>sub-unordered list item 2.
+<ul>
+<li><input checked="" disabled="" type="checkbox"> something is DONE.</li>
+<li><input disabled="" type="checkbox"> something is NOT DONE.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Syntax Highlighting:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">num1</span>, <span style="color:#a6e22e">num2</span>, <span style="color:#a6e22e">sum</span>
+<span style="color:#a6e22e">num1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Enter first number&#34;</span>)
+<span style="color:#a6e22e">num2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">prompt</span>(<span style="color:#e6db74">&#34;Enter second number&#34;</span>)
+<span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">num1</span>) <span style="color:#f92672">+</span> parseInt(<span style="color:#a6e22e">num2</span>) <span style="color:#75715e">// &#34;+&#34; means &#34;add&#34;
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Sum = &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">sum</span>)  <span style="color:#75715e">// &#34;+&#34; means combine into a string
+</span></code></pre></div><section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>From <a href="https://en.wikipedia.org/wiki/Apple">https://en.wikipedia.org/wiki/Apple</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

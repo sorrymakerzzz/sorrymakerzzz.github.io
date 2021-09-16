@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhaseNet on 主页</title>
+    <link>https://sorrymakerzzz.github.io/tags/phasenet/</link>
+    <description>Recent content in PhaseNet on 主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 08 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sorrymakerzzz.github.io/tags/phasenet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhaseNet: A Deep-Neural-Network-Based Seismic Arrival Time Picking Method</title>
+      <link>https://sorrymakerzzz.github.io/paper/phasenet-a-deep-neural-network-based-seismic-arrival-time-picking-method/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sorrymakerzzz.github.io/paper/phasenet-a-deep-neural-network-based-seismic-arrival-time-picking-method/</guid>
+      <description>单词速记 专业 Seismic Arrival Time —— 地震波到时sensor —— 传感器seismic phase —— 震相earthquake monitoring —— 地震监测three-component —— 三分量waveform —— 波形probability distribution —— 概率分布recall rate —— 召回率（约等于准确率）seismology —— 地震学earthquake catalogs —— 地震编目scattered waves —— 散射波threshold —— 临界值、阈值impulsive —— 脉冲的kurtosis —— 峰度skewness —— 歪斜、偏度variance —— 方差sliding window —— 滑动窗口algorithm —— 算法polarization analysis —— 偏振分析source mechanism —— 震源机制site-effects ——场地地震效应band-pass filtering —— 带通滤波stratified sampling —— 分层抽样signal-to-noise ratio (SNR) —— 信噪比standard deviations —— 标准差1-D time series data —— 一维时间序列数据normalized exponential function —— 归一化指数函数down-sampling —— 下采样up-sampling —— 上采样neuron —— 神经元residuals —— 残差evaluation indicator —— 评价指标evaluation metrics —— 评价指标short period —— 短周期broad band —— 宽带high gain —— 高增益low gain —— 低增益accelerometer —— 加速度计PCA（Principal Component Analysis）—— 主成分分析vector —— 矢量polarization —— 极化通用 comprehensively —— 全面地bias —— 偏见，偏差present —— 提出performance —— 性能generate —— 生成dataset —— 数据集demonstrate —— 证明accelerate —— 加速dense —— 稠密的emerge —— 浮现，暴露onset —— 开始 the onset of the seismic event —— 地震事件的开始coincide —— 一致，同时发生combination —— 组合utilize —— 利用distinguish —— 区分primarily —— 主要地primarily —— 大量的lag —— 落后tremendous —— 巨大的available —— 有效的digital —— 数字的property —— 性能seek to —— 寻求category —— 种类divergence —— 差异raw —— 生的，未加工的，原始的shrink —— 收缩，压缩broadly —— 明显地；宽广地；概括地distinctly —— 明显地，确实地narrower —— 比较狭窄的abrupt —— 突然的，陡峭的subjective —— 主观的criterion —— 标准，条件capture —— 捕获condensed —— 浓缩的；扼要的implicitly —— 隐含的，含蓄的degraded —— 退化的论文阅读 SUMMARY  提出了一种基于深度神经网络的地震波到时提取方法，网络名为“PhaseNet”，该方法同时提取P波和S波的到时。 数据集：从30多年间的地震记录中提取的700多万个波形样本；input：未过滤的三分量地震波；output：P波、S波和噪声的概率分布 PhaseNet能够在概率上提供P波和S波的准确到达时间，并有可能在现有的基础上大幅增加横波观测的数量 数据来源：经过分析师标注的P和S波到达时间的大量可用数据集，来自北加州地震数据中心  Key words PhaseNet， deep neural network， arrival time picking， S-arrival picker， NCEDC</description>
+    </item>
+    
+  </channel>
+</rss>
